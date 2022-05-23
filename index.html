@@ -10,6 +10,7 @@
 
   <body>
     <div class="stack">
+      <!-- Navbar -->
       <nav>
         <div class="container flex-row">
           <h1>Steve Smodish</h1>
@@ -28,97 +29,96 @@
       </nav>
       <main>
         <div class="stack">
+          <!-- About -->
           <section class="about container">
             <a href="#about" name="about">About Me</a>
             <p>
               After 25 years in the entertainment business, I'm now following my
               second love - CODE!
-            </p>
-            <p>
+              <br />
               I started programming way back in the 1980's with Basic on a
               TRS-80 color computer
             </p>
           </section>
-          <section class="projects container stack">
-            <a href="projects" name="projects">Projects</a>
 
+          <!-- Projects -->
+          <section class="projects container stack">
+            <a href="projects" name="projects"><h2>Projects</h2></a>
+
+            <!-- GOATPAD -->
             <article class="project">
-              <a href="project" name="project">
-                <h2>Flytelog</h2>
-              </a>
+              <h2>Goatpad</h2>
               <p>
-                This project was developed by 5 people over the course of five
-                weeks. While my focus was on devops, form building, and styling,
-                I contributed to all parts of this project.
+                Currently working on this project loosely inspired by Reddit.
               </p>
-              <button>
-                <a href="https://lab9-flightlogs.firebaseapp.com/"
-                  >Visit Page</a
-                >
-              </button>
-              <button>
-                <a href="https://github.com/Lambda-School-Labs/labs9-flight-log"
-                  >View Code</a
-                >
-              </button>
+              <p>Tech Stack: React, Firebase, Styled Components</p>
+
+              <a href="https://goat-pad.web.app/">
+                <button class="btn-primary">Visit Page</button>
+              </a>
+              <a href="https://github.com/grammerhub/goatpad">
+                <button class="btn-primary">View Code</button>
+              </a>
             </article>
+
+            <!-- Grammerhub API -->
             <article class="project">
-              <a href="project" name="project">
-                <h2>UseMyStuff</h2>
-              </a>
+              <h2>Grammerhub API tutorial</h2>
               <p>
-                This project was developed by 7 people over the course of four
-                days. My role as team leader was to facilitate communication
-                between the developers who were at different stages in their
-                education.
+                This is a simple API tutorial for the Grammerhub Meetup Group.
               </p>
-              <button>
-                <a href="https://bw2-techstuff.netlify.com/">Visit Page</a>
-              </button>
-              <button>
-                <a
-                  href="https://github.com/lambda-build-week-2-use-my-tech-stuff"
-                  >View Code</a
-                >
-              </button>
+              <p>Tech Stack: Node, Express, Knex, PostgreSQL</p>
+              <a href="https://bw2-techstuff.netlify.com/">
+                <button class="btn-primary btn-disabled" disabled>
+                  Visit Page
+                </button>
+              </a>
+              <a
+                href="https://github.com/lambda-build-week-2-use-my-tech-stuff"
+              >
+                <button class="btn-primary">View Code</button>
+              </a>
             </article>
+
+            <!-- Crown Clothing -->
             <article class="project">
               <a href="project" name="project">
-                <h2>Lambda Notes</h2>
+                <h2>Crown Clothing</h2>
               </a>
-              <p>
-                This project was developed by me alone over two five day
-                sessions - one for the front end and one for the backend.
-              </p>
-              <button>
-                <a href="https://github.com/ssmodish/lambda-notes-redux"
-                  >View Code</a
-                >
-              </button>
+              <p>Mock E-Commerce website for a local clothing store.</p>
+              <p>Tech Stack: React, Redux, Firebase, Stripe</p>
+              <a href="https://crown-clothing.web.app/">
+                <button class="btn-primary">Visit Page</button>
+              </a>
+              <a href="https://github.com/ssmodish/crwn-clothing">
+                <button class="btn-primary">View Code</button>
+              </a>
             </article>
           </section>
         </div>
       </main>
+
+      <!-- Footer -->
       <footer class="contact container">
         <h2><a href="contact" name="contact">Contact</a></h2>
-        <div class="btn-primary">
-          <a href="mailto://stevesmodish@gmail.com">
+        <a href="mailto://stevesmodish@gmail.com">
+          <div class="btn-primary">
             <span class="service_logo" id="email"></span>
             Email
-          </a>
-        </div>
-        <div class="btn-primary">
-          <a href="https://github.com/ssmodish">
+          </div>
+        </a>
+        <a href="https://github.com/ssmodish">
+          <div class="btn-primary">
             <span class="service_logo" id="github"></span>
             GitHub
-          </a>
-        </div>
-        <div class="btn-primary">
-          <a href="https://www.linkedin.com/in/stevesmodish/">
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/stevesmodish/">
+          <div class="btn-primary">
             <span class="service_logo" id="linkedin"></span>
             LinkedIn
-          </a>
-        </div>
+          </div>
+        </a>
       </footer>
       <a href="https://www.stevesmodish.com">
         <span class="service_logo" id="homepage"></span>Return Home

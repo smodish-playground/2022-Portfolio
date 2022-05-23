@@ -3,14 +3,26 @@
   border-radius: 5px;
   padding: 0.5rem 1rem;
   margin: 3px;
+  border: none;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  color: $light-color;
+  font-weight: 600;
 
-  &:hover {
-    transform: scale(0.98);
+  @keyframes btn-hover {
+    from {
+      transform: scale(1);
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+    to {
+      transform: scale(0.98);
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    }
   }
 
-  & a {
-    color: $light-color;
-    font-weight: 600;
+  &:hover {
+    animation: btn-hover 0.2s ease-in-out;
+    transform: scale(0.98);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -22,4 +34,17 @@
 .btn-secondary {
   @extend %btn;
   background-color: $secondary;
+}
+
+.btn-disabled {
+  @extend %btn;
+  background-color: $light-color;
+  color: $light-color;
+  box-shadow: none;
+
+  &:hover {
+    animation: none;
+    transform: none;
+    box-shadow: none;
+  }
 }

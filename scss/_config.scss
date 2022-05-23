@@ -1,5 +1,9 @@
-$font-stack: Arial, Helvetica, sans-serif;
+@use "sass:color";
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,700|Source+Sans+Pro:300,600,300italic,600italic");
+
+$font-stack: "Source Sans Pro", Arial, Helvetica, sans-serif;
 $light-color: #cccccc;
-$dark-color: #333333;
-$primary: #0e6cff;
-$secondary: #ff8700;
+$dark-color: #2e3141;
+$primary: color.scale($dark-color, $lightness: 20%);
+$secondary: #cc8733;
