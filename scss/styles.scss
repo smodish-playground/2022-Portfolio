@@ -1,0 +1,41 @@
+@import "config";
+@import "utilities";
+@import "buttons";
+
+* {
+  // border: 1px solid orange;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $light-color;
+  font-family: $font-stack;
+  line-height: 1.6;
+}
+
+a {
+  color: $dark-color;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $secondary;
+}
+
+nav {
+  background-color: $dark-color;
+  color: $light-color;
+  padding: 1rem;
+
+  a {
+    color: $light-color;
+  }
+}
+
+.nav-links {
+  text-decoration: none;
+  list-style: none;
+  width: 300px;
+}
